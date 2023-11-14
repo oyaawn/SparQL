@@ -1,0 +1,7 @@
+#select 10 parent whose daughter is a profesor
+PREFIX eg: <https://example.org>
+SELECT ?parent
+WHERE{
+    ?parent eg:hasDaughter? ?daughter.
+    ?daughter eg:hasJob? eg:Professor.
+}
